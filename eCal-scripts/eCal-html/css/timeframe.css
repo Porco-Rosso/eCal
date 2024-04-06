@@ -1,0 +1,130 @@
+body{
+	width: 540px;
+	height: 960px;
+	color: black;
+	font-family: Helvetica;
+	background-color: #ffffff;
+	border-width: 2px;
+	border: solid;
+	border-color: #555555;
+	overflow: hidden;
+	margin:0px;
+	position: relative;
+
+	z-index: 0;
+}
+	div{
+		display: block;
+		color: black;
+		font-size: 14px;
+		font-weight: 450;
+		text-align: left;
+	}
+	
+	#head{
+		font-weight: bold;
+		font-size: 25px;
+	}
+	.subhead{
+		font-weight: bold;
+		font-size: 25px;
+		border-left: solid 4px;
+		border-radius: 2px;
+		border-color: #bbbbbb;
+		padding-top: 6px;
+		padding-bottom: 3px;
+		padding-left: 5px;
+		background-color: #3d3d3d;
+
+		mix-blend-mode: multiply;
+		width: 440px !important;
+		left: 70px !important;
+		z-index: 1;
+		color: #FFFFFF;
+		overflow: hidden;
+	}
+
+	.subhead:hover{
+		background-color: #a0b8f0;
+		cursor: pointer;
+		cursor: hand;
+		}
+	#line{
+		left: 60px;
+		width: 480px;
+		border: 1px solid #3e5ea3;
+	}
+	#hour-line{
+		left: 60px;
+		width: 480px;
+		border: 0.5px solid #bbbbbb;
+	}
+
+	#line-text{
+		font-size: 20px;
+		font-weight: bold;
+		left: 1px;
+		color: black;
+		background-color: #ffffff;
+		border-width: 2px;
+		border-style: solid;
+		border-radius: 6px;
+	}
+
+	#hour-text{
+		font-size: 20px;
+		/* font-weight: bold; */
+		left: 5px;
+		color: black;
+	}
+
+	#dot{
+		left: 75px;
+		height: 8px;
+		width: 8px;
+		background-color: #3e5ea3;
+		border-radius: 50%;
+		display: inline-block;
+	}
+	
+	#top-container{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-bottom;
+		margin-right:3px;
+		
+	#top-right-container{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-items: flex-bottom;
+		flex:2;
+	}
+	
+	#date{
+		color: black;
+		font-size: 25px;
+		padding-left: 5px;
+		font-weight: bold;
+		flex: 1.25;
+	}
+	
+	.all-day{
+		color:white;
+		background-color: #3d3d3d;
+		border-radius: 3px;
+		font-size: 20px;
+		padding-left: 3px;
+		padding-right: 3px;
+		margin-right:2px;
+		margin-top:1px;
+		align-self: center;
+		font-weight: bold;
+	}
+	
+	#burn-in-protector{
+		height:1px;
+	}
