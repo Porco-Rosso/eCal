@@ -4,12 +4,11 @@ import time
 from pathlib import Path
 
 from PIL import Image
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service as ChromeService
-from selenium.webdriver.common.by import By
-#from webdriver_manager.chrome import ChromeDriverManager
-
+# from webdriver_manager.chrome import ChromeDriverManager
 
 def get_cache_dir():
     cache_dir = (
@@ -45,12 +44,11 @@ for argument in [
     "--verbose",
 ]:
     options.add_argument(argument)
-
         
-driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver',
-    # service=ChromeService(ChromeDriverManager().install()),
-    options=options,
-)
+driver = webdriver.Chrome('/usr/bin/chromedriver',
+        # service=ChromeService(ChromeDriverManager().install()),
+        options=options,
+    )
 
 # print("Getting page...")
 # html_file = os.getcwd() + "/" + "eCal-html/eCal.html"
